@@ -1,0 +1,74 @@
+<!-- 添加图书 -->
+<!doctype html>
+<html>
+<head>
+    <title>Book Shop</title>
+    <meta charset="utf-8">
+    <meta name="description" content="A good book shop online">
+    <meta name="keywords" content="Book,shop,online">
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="Begin.css">
+</head>
+<body>
+<!-- 头部 -->
+<div class="headName">
+    <a href="#"> Book-Shop</a>
+</div>
+<div id="adm">
+    Administrator
+</div>
+
+
+<div class="leftSide">
+    <ul>
+        <li>
+            <a href="#">
+                列表信息
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                添加图书
+            </a>
+        </li>
+    </ul>
+</div>
+
+<div class="addBook">
+    书籍封面：<input type="file" name="bookImg" accept="image/gif, image/jpeg"><br>
+    书籍名称：<input type="text" value="" name="bookName">
+    <br>
+    作者：<input type="text" value="" name="author"><br>
+    价格：<input type="text" name="price"><br>
+    <strong>作者信息：</strong>
+    <form name="aboutAuthor">
+        <textarea cols="50" rows="10">
+
+        </textarea>
+    </form>
+    <strong>书籍信息：</strong>
+    <form name="aboutBook">
+        <textarea cols="50" rows="10">
+
+        </textarea>
+    </form>
+</div>
+<input type="button" value="取消">
+<input type="button" value="提交">
+<!-- 尾部 -->
+<div class="tail">
+    <ul>
+        <li>
+            <a href="javascript:;" >Search</a>
+        </li>
+        <li>
+            <a href="javascript:;">About us</a>
+        </li>
+        <li>
+            <a href="javascript:;">Github</a>
+        </li>
+    </ul>
+</div>
+
+</body>
+</html>

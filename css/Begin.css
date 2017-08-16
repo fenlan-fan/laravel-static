@@ -1,0 +1,68 @@
+body a{
+    text-decoration: none;
+    font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+    color: #000;
+}
+
+.headName a{
+    font-family: "微软雅黑";
+    font-size: 50px;
+}
+
+* {
+    margin: 0;/*清除外边距*/
+    padding: 0;/*清除内边距*/
+}
+
+li {
+    list-style: none;/*清除默认小圆点*/
+}
+
+#rightSidebar{
+    width: 600px;
+    background: #99ff66;
+}
+
+#rightSidebar>ul>li{
+    position: relative;
+    color: #fff;
+    float: left;
+    width: 200px;
+}
+
+.mainBook>ul{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 90%;
+
+}
+.mainBook>ul>li{
+    width: 20%;
+    height: auto;
+    list-style: none;
+    float: left;
+    margin: 10px 15px;
+    background-color: transparent;
+    box-shadow: 0 0 3px;
+}
+
+
+
+
+#sidebar>ul>li{
+    position:relative;/*定位，父类*/
+    width: 230px;
+    color: #fff;/*文本颜色*/
+}
+
+#sidebar>ul>li>a{
+    display: block;
+    padding: 12px 5px 12px 35px;
+    /*边框线 粗细 样式*/
+    border-left: 3px solid transprent;//颜色透明 dotted 为点状,solid为线状
+}
+

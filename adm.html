@@ -1,3 +1,4 @@
+<!-- 基于chrome-->
 <!doctype html>
 <html>
 <head>
@@ -6,21 +7,27 @@
     <meta name="description" content="A good book shop online">
     <meta name="keywords" content="Book,shop,online">
     <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="Begin.css">
+    <link rel="stylesheet" href="css/adm.css" type="text/css">
 </head>
 <body>
 <!-- 头部 -->
 <div class="headName">
     <a href="#"> Book-Shop</a>
+
+    <div id="adm">
+        Administrator
+    </div>
+
 </div>
+<!--
 <div id="adm">
     Administrator
 </div>
-
+-->
 <div class="leftSide">
     <ul>
         <li>
-            <a href="#">
+            <a href="#" >
             列表信息
             </a>
         </li>
@@ -53,7 +60,7 @@
 
     <div class="infoHead">图书信息</div>
     <div class="catalogue"><!-- 目录 -->
-        <table>
+        <table cellpadding="0" cellspacing="0">
             <tr>
                 <th>
                     索引号
@@ -78,7 +85,7 @@
                 </th>
             </tr>
 
-            <tr>
+            <tr bgcolor="#d3d3d3">
                 <th scope="row">1</th><!-- 列表头 -->
                 <td>你好世界</td>
                 <td>30</td>
@@ -108,7 +115,7 @@
                     <a href="#" onclick="return bookDelete()">删除</a>
                 </td>
             </tr>
-            <tr>
+            <tr bgcolor="#d3d3d3">
                 <th scope="row">3</th><!-- 列表头 -->
                 <td>外婆的道歉信</td>
                 <td>20</td>
@@ -161,19 +168,20 @@
 </div>
 
 <!-- 尾部 -->
-<div class="tail">
-    <ul>
-        <li>
-            <a href="javascript:;" >Search</a>
-        </li>
-        <li>
-            <a href="javascript:;">About us</a>
-        </li>
-        <li>
-            <a href="javascript:;">Github</a>
-        </li>
-    </ul>
-</div>
-
+<footer>
+    <div class="tail">
+        <ul>
+            <li>
+                <a href="javascript:;" >Search</a>
+            </li>
+            <li>
+                <a href="javascript:;">About us</a>
+            </li>
+            <li>
+                <a href="javascript:;">Github</a>
+            </li>
+        </ul>
+    </div>
+</footer>
 </body>
 </html>

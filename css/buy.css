@@ -1,0 +1,45 @@
+.headName a{
+    padding-top: 50px;
+    padding-left: 10px;
+    float: left;
+}
+.headName{
+    width: 100%;
+    height: 150px;
+    font-size: 40px;
+    background-color: #d3d3d3;
+}
+/*
+#submit{
+    margin-left: 90%;
+}*/
+a{
+    text-decoration: none;
+    color: black;
+}
+li{
+    list-style: none;
+}
+.headName li{
+    margin-left: 28%;
+}
+.buyPage{
+    margin-top: 20px;
+}
+.buyPage img{
+    display: block;
+    margin: 0 auto;/*居中*/
+}
+.fontDescribe{
+    text-align: center;
+}
+.buyPage ul {
+    margin-left: 43%;
+}
+.buyPage ul li{
+    float: left;
+    width: 40px;
+}
+.tail ul li a{
+    color: blue;
+}

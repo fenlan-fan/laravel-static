@@ -5,11 +5,24 @@
     <meta charset="utf-8">
     <meta name="description" content="Buy page">
     <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/buy.css">
 </head>
 <body>
 <!-- 头部 -->
 <div class="headName">
     <a href="#"> Book-Shop</a>
+    <li class="fa fa-shopping-cart fa-4x" aria-hidden="true"></li>
+    <!--
+    <a href="#">
+        <input type="button" value="付款" id="submit" />
+    </a>
+    --><!-- 为什么位于li之前？ -->
+    <!--
+    <div style="margin-left: 90%">
+        <a href="#">
+            <input type="button" value="付款" id="submit" />
+        </a>
+    </div>  被挤出去了？ -->
 </div>
 
 
@@ -17,16 +30,11 @@
     <!-- 左侧 -->
     <img src="image/1.jpg" height="600" width="480"><!-- 需要向右移一点 -->
     <!-- 右侧 -->
-    <div class="fontDescript">
-        <p>
-            你好世界
-             ￥30
-        </p>
-        这是一本很好地书。。。<!-- 相片的右侧 -->
+    <div class="fontDescribe">
+            你好世界<br>
+             &nbsp;￥30<br>
+        顾客评价：这是一本很好地书。。。<!-- 相片的右侧 -->
     </div>
-    <a href="#">
-    <input type="button" value="付款">
-    </a>
     <ul><!-- 水平浮动 -->
         <li>
             <a href="#">
@@ -51,4 +59,20 @@
 
     </ul>
 </div>
+<br>
+<!-- 尾部 -->
+<div class="tail">
+    <ul>
+        <li>
+            <a href="javascript:;" >Search</a>
+        </li>
+        <li>
+            <a href="javascript:;">About us</a>
+        </li>
+        <li>
+            <a href="javascript:;">Github</a>
+        </li>
+    </ul>
+</div>
 </body>
+</html>

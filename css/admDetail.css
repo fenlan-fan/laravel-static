@@ -1,0 +1,51 @@
+.headName a{
+    text-decoration: none;
+    color: black;
+    padding-top: 50px;
+    padding-left: 10px;
+    float: left;
+}
+.headName{
+    width: 100%;
+    height: 150px;
+    font-size: 40px;
+    background-color: #d3d3d3;
+}
+#adm{
+    padding-top: 30px;
+    padding-left: 450px;
+    font-size: 80px;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+
+}
+.bookInfo img{
+    margin-top: 100px;
+    width: 400px;
+    height: auto;
+    float: left;
+}
+#right{
+    margin-left: 40%;
+}
+#name{
+    margin-top: 80px;
+    text-align: center;
+    font-size: x-large;
+}
+#price{
+    text-align: center;
+}
+#surplusAmount{
+    text-align: center;
+}
+#category{
+    text-align: center;
+}
+#time{
+    margin-left: 20px;
+}

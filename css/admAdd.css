@@ -1,0 +1,62 @@
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.headName a{
+    text-decoration: none;
+    color: black;
+    padding-top: 50px;
+    padding-left: 10px;
+    float: left;
+}
+.headName{
+    width: 100%;
+    height: 150px;
+    font-size: 40px;
+    background-color: #d3d3d3;
+}
+#adm{
+    padding-top: 30px;
+    padding-left: 450px;
+    font-size: 80px;
+}
+.leftSide ul li a{
+    color: black;
+    display: block;
+    padding-top: 10px;
+}
+.leftSide ul li{
+    text-align: center;
+    height: 50px;
+    font-size: large;
+    background-color: lightgray;
+}
+.leftSide ul{
+    width: 160px;
+    margin: 0;
+    padding: 0;
+    height: auto;
+}
+.leftSide ul li:hover{
+    background-color: cornflowerblue;
+}
+.leftSide{
+    margin-top: 80px;
+    padding-left: 80px;
+    width: 500px;
+    height: 200px;
+    float: left;
+}
+
+.addBook{
+    margin-top: 50px;
+    margin-left: 44%;
+}
+#button{
+    margin-left: 44%;
+}
+#submit{
+    margin-left: 402px;
+}

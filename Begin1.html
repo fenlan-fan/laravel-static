@@ -7,50 +7,57 @@
     <meta name="keywords" content="Book,shop,online">
     <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/Begin.css">
+    <script src="js/Begin1.js" type="text/javascript"></script>
 </head>
-<body>
+<body onload="start()">
 <!-- 头部 -->
 <div class="headName">
-    <a href="#"> Book-Shop</a>
-</div>
-<div id='rightSidebar'><!-- 参考自己写的那一个可变导航栏 -->
-    <ul>
-        <li><a href="javascript:;">SHOP</a> <!-- 注意把所有li的默认小圆点消掉 -->
-            <ul class="menu">
-                <li><a href="javascript:;">Books</a></li>
-                <li><a href="javascript:;">Art</a></li>
-                <li><a href="javascript:;">Small Goods</a></li>
-            </ul>
-        </li>
-        <li><a href="javascript:;">CONTACT</a>
-        </li>
-        <li><a href="javascript:;">ABOUT US</a>
-            <ul>
-                <li><a href="javascript:;">About us</a></li>
-                <li><a href="javascript:;">Event</a></li>
-                <li><a href="javascript:;">More</a></li>
-            </ul>
-        </li>
-        <a href="#">
-        <li class="fa fa-user-circle-o" aria-hidden="true"></li>
-        </a>
-        <li>
-            <a href="javascript:;">Log in</a>
-        </li>
-         <a href="#">
-        <li class="fa fa-shopping-cart" aria-hidden="true"></li>
-         </a>
-        <li>
-            <a href="javascript:;">Create account</a>
-        </li>
+    <div id="Book-shop"><a href="#"> Book-Shop</a></div>
+    <div id='rightSidebar'><!-- 参考自己写的那一个可变导航栏 -->
+        <ul>
+            <li><a href="javascript:;" onclick="shop()" onblur="shop1()">SHOP</a> <!-- 注意把所有li的默认小圆点消掉 -->
+                <form id="menu">
+                    <ul>
+                        <li><a href="javascript:;">Books</a></li>
+                        <li><a href="javascript:;">Art</a></li>
+                        <li><a href="javascript:;">Small Goods</a></li>
+                    </ul>
+                </form>
+            </li>
+            <li><a href="javascript:;">CONTACT</a>
+            </li>
+            <li><a href="javascript:;" onclick="aboutUs()" onblur="aboutUs1()">ABOUT US</a>
+                <form id="us">
+                    <ul>
+                        <li><a href="javascript:;">About us</a></li>
+                        <li><a href="javascript:;">Event</a></li>
+                        <li><a href="javascript:;">More</a></li>
+                    </ul>
+                </form>
+            </li>
+            <a href="#">
+                <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+            </a>
+            <!--
+            <li>
+                <a href="javascript:;">Log in</a>
+            </li>-->
+            <a href="#">
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            </a><!--
+            <li>
+                <a href="javascript:;">Create account</a>
+            </li>-->
 
+        </ul>
+    </div>
 </div>
 
 <!-- 中间内容区局 -->
 <div class="search">
-    <input type="text" value="你好世界">
+    <input type="text" placeholder="你好世界">
     <a href="#">
-    <i class="fa fa-search" aria-hidden="true"></i>
+    <i class="fa fa-search fa-2x" aria-hidden="true"></i>
     </a>
 </div>
 <div class="mainBook">
@@ -88,8 +95,7 @@
 
 <div class="newsletter">
     <div class="wrapper">
-        <form action="//COM.us4.list-manage.com/subscribe/post?u=90a4ad1b081ad7fd3697e732b&amp;id=845e2d5a03" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank">
-            <label for="Email" class="newsletter__label hidden-label">Sign up to our mailing list</label>
+        <form action="" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank">
             <div class="input-group">
                 <input type="email" value="" placeholder="Sign up to our mailing list" name="EMAIL" id="Email" class="input-group-field newsletter__input" autocorrect="off" autocapitalize="off">
                 <span class="input-group-btn">

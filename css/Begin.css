@@ -1,13 +1,17 @@
+.headName{
+    width: 100%;
+    height: 100px;
+    background-color: #d3d3d3;
+}
+#Book-shop{
+    font-size: 40px;
+}
 body a{
     text-decoration: none;
     font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
     color: #000;
 }
 
-.headName a{
-    font-family: "微软雅黑";
-    font-size: 50px;
-}
 
 * {
     margin: 0;/*清除外边距*/
@@ -19,16 +23,16 @@ li {
 }
 
 #rightSidebar{
-    width: 600px;
-    background: #99ff66;
+    margin-left: 50%;
+    width: 700px;
 }
 
 #rightSidebar>ul>li{
-    position: relative;
     color: #fff;
     float: left;
     width: 200px;
 }
+
 
 .mainBook>ul{
     display:flex;
@@ -50,7 +54,9 @@ li {
     box-shadow: 0 0 3px;
 }
 
-
+.linkFont{
+    text-align: center;
+}
 
 
 #sidebar>ul>li{
@@ -65,4 +71,34 @@ li {
     /*边框线 粗细 样式*/
     border-left: 3px solid transprent;//颜色透明 dotted 为点状,solid为线状
 }
-
+.search{
+    position: static;
+    text-align: center;
+}
+.search input{
+    margin: 80px 0 50px 0;
+    width: 500px;
+    height: 35px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    font-size: large;
+}
+.turnPage{
+    margin-top: 20px;
+    margin-left: 60px;
+}
+.tail{
+    margin-left: 60px;
+}
+.newsletter{
+    margin: 20px 0 20px 50px;
+}
+.tail a{
+    color: blue;
+}
+#menu{
+    position: absolute;
+}
+#us{
+    position: absolute;
+}

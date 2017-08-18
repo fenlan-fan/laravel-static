@@ -1,0 +1,40 @@
+.headName a{
+    padding-top: 50px;
+    padding-left: 10px;
+    float: left;
+}
+.headName{
+    width: 100%;
+    height: 150px;
+    font-size: 40px;
+    background-color: #d3d3d3;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+#login{
+    padding-top: 20px;
+    padding-left: 43%;
+    font-size: 80px;
+}
+form{
+    text-align: center;
+    //margin-right: 40%;
+    margin-top: 130px;
+    height: 150px;
+}
+.input{
+    padding-top: 40px;
+    margin-left: 35%;
+    margin-right: 35%;
+    background-color: lightgray;
+}
+#button{
+    margin-top: 20px;
+}
+#button input{
+    //display: block;
+    margin-left: 80px;
+}

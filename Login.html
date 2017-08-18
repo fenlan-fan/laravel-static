@@ -6,21 +6,28 @@
     <meta charset="utf-8">
     <meta name="description" content="Buy page">
     <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/Login.css" />
 </head>
 <body>
   <!-- 头部 -->
 <div class="headName">
     <a href="#"> Book-Shop</a><!-- 右侧 -->
+    <div id="login">
+        Login
+    </div>
 </div>
 
-<form method="get" action="#" name="login">
-    email&nbsp;<input type="email"><br>
+<form method="get" action="#" name="login" class="input">
+    &nbsp;&nbsp;&nbsp;account&nbsp;<input type="email" autofocus><br><br>
     password&nbsp;<input type="password">
+    <div id="button">
+        <a href="#">
+            <input type="button" value="cancel" id="cancel">&nbsp;&nbsp;
+        </a>
+        <a href="#">
+            <input type="button" value="ensure" id="ensure">
+        </a>
+    </div>
 </form>
-
-  <a href="#">
-      <input type="button" value="ensure">&nbsp;&nbsp;
-  </a>
-  <a href="#">
-      <input type="button" value="cancel">
-  </a>
+</body>
+</html>

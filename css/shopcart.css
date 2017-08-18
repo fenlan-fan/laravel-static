@@ -14,29 +14,23 @@ a{
     text-decoration: none;
     color: black;
 }
+.name{
+    margin-left: 4%;
+    margin-right: 85%;
+    text-align: center;
+}
 li{
     list-style: none;
 }
 .headName i{
     margin-left: 28%;
 }
-.buyPage{
+.tail a{
+    color: blue;
+}
+.orderForm ul li{
     margin-top: 20px;
 }
-.buyPage img{
-    display: block;
-    margin: 0 auto;/*居中*/
-}
-.fontDescribe{
-    text-align: center;
-}
-.buyPage ul {
-    margin-left: 43%;
-}
-.buyPage ul li{
-    float: left;
-    width: 40px;
-}
-.tail ul li a{
-    color: blue;
+.turnPage{
+    margin-left: 7%;
 }

@@ -8,8 +8,9 @@
     <meta name="keywords" content="Book,shop,online">
     <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/alter.css">
+    <script rel="stylesheet" type="text/javascript" src="js/alter.js"></script>
 </head>
-<body>
+<body onload="start()">
 <!-- 头部 -->
 <div class="headName">
     <a href="#"> Book-Shop</a>
@@ -34,34 +35,34 @@
 
 <div class="bookInfo">
     <font size="4">书籍图片：</font><br><img src="image/1.jpg"><br>
-    <input name="bookImg" type="file" accept="image/gif, image/jpeg" >
+    <input name="bookImg" type="file" accept="image/gif, image/jpeg">
     <input name="upload" type="submit" value="上传" >
     <br>
     <br>
     <div class="name">
-        书名和作者：<input type="text" value="你好世界-杨老师1号" name="bookName">
+        书名和作者：<input type="text" value="你好世界-杨老师1号" name="bookName" id="bookName">
     </div>
     <div class="price">
-        价&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;格：<input type="text" value="￥30">
+        价&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;格：<input type="text" value="￥30" id="price">
     </div>
     <div class="surplus amount"> <!-- 剩余数量 -->
-        库&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;存：<input type="text" value="30">
+        库&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;存：<input type="text" value="30" id="surplusAmount">
     </div>
     <div class="category"><!-- 分类 -->
-        分&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;类：<input type="radio" name="kind" value="Books" checked>Books
-        <input type="radio" name="kind" value="Art">Art
-        <input type="radio" name="kind" value="Small Goods">Small Goods<br>
+        分&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;类：<input type="radio" name="kind" value="Books" checked id="Books">Books
+        <input type="radio" name="kind" value="Art" id="Art">Art
+        <input type="radio" name="kind" value="Small Goods" id="Goods">Small Goods<br>
     </div>
     <div class="bookDetail">
         <div class="author">
             <strong>关于作者：</strong>
             <form action="" method="get" name="author">
-                <textarea cols="50" rows="10">作者为网络写手，专用google doc进行创作。作者日伏夜出，披星戴月，卧薪尝胆。患有严重的人格分裂，整日切换于不同角色之间，思考社会，教育，和青年人的未来。具有能力在瞬间分裂成三个自我，互相争吵然后迅速统一。作者的人格还在继续分裂中，期待在不久的将来成功分裂成10人格左右，多角色的协调整体，共同完成一份漂亮的简历，并借此找到一份收入稳定的工作。作者有一个小小的梦想：在两年之内成长为人见人爱，花见花开的职场杀手，成为少男少女上班后的倾诉对象。
+                <textarea cols="50" rows="10" id="authorInfo">作者为网络写手，专用google doc进行创作。作者日伏夜出，披星戴月，卧薪尝胆。患有严重的人格分裂，整日切换于不同角色之间，思考社会，教育，和青年人的未来。具有能力在瞬间分裂成三个自我，互相争吵然后迅速统一。作者的人格还在继续分裂中，期待在不久的将来成功分裂成10人格左右，多角色的协调整体，共同完成一份漂亮的简历，并借此找到一份收入稳定的工作。作者有一个小小的梦想：在两年之内成长为人见人爱，花见花开的职场杀手，成为少男少女上班后的倾诉对象。
                 </textarea><br>
             </form>
             <strong>图书简介：</strong>
             <form action="" method="get" name="bookInformation">
-                <textarea cols="50" rows="10">这套绘本为克罗地亚知名画家安德里亚?帕特丽珂最新创作的低幼认知类图画书，已出版过“黄色校车系列”。该套绘本以不同的小动物为主人公，围绕世界、色彩、季节、学校、朋友主题讲述了5个贴近幼儿生活的认知故事，包含自然科学知识、社会交往知识两大领域。油画般绚烂明亮的色彩、萌趣治愈的图画风格、诗歌般的韵律语言，让孩子在快乐中进行认知的同时，培养最基本的人际交往能力和阳光正面的世界观，全方位刺激儿童的综合发展。《你好，世界》以小象旅行的故事描绘了孩子心中对未知世界珍贵的好奇心，鼓励他们勇于探索和发现。《你好，色彩》让孩子认识和了解各种各样的颜色以及代表的情绪奥秘。《你好，季节》通过一只猫的视角讲故事，教会孩子认知各个季节的特点。《你好，朋友》是一册讲述友情的图画书，同时让孩子们在快乐阅读中学会团结协作，积极开动脑经解决问题。《你好，学校》讲述图画书讲述了小龙波波利的学习成长故事。适合即将进入幼儿园和小学的小朋友。让孩子们感受到知识的力量和与小朋友交往的快乐。
+                <textarea cols="50" rows="10" id="bookInfo">这套绘本为克罗地亚知名画家安德里亚?帕特丽珂最新创作的低幼认知类图画书，已出版过“黄色校车系列”。该套绘本以不同的小动物为主人公，围绕世界、色彩、季节、学校、朋友主题讲述了5个贴近幼儿生活的认知故事，包含自然科学知识、社会交往知识两大领域。油画般绚烂明亮的色彩、萌趣治愈的图画风格、诗歌般的韵律语言，让孩子在快乐中进行认知的同时，培养最基本的人际交往能力和阳光正面的世界观，全方位刺激儿童的综合发展。《你好，世界》以小象旅行的故事描绘了孩子心中对未知世界珍贵的好奇心，鼓励他们勇于探索和发现。《你好，色彩》让孩子认识和了解各种各样的颜色以及代表的情绪奥秘。《你好，季节》通过一只猫的视角讲故事，教会孩子认知各个季节的特点。《你好，朋友》是一册讲述友情的图画书，同时让孩子们在快乐阅读中学会团结协作，积极开动脑经解决问题。《你好，学校》讲述图画书讲述了小龙波波利的学习成长故事。适合即将进入幼儿园和小学的小朋友。让孩子们感受到知识的力量和与小朋友交往的快乐。
                 </textarea>
             </form>
         </div>
@@ -70,8 +71,8 @@
 </div>
 
 <div class="button">
-    <input type="button" value="取消" id="cancel">
-    <input type="button" value="提交" id="submit">
+    <input type="button" value="取消" id="cancel" onclick="cancel()">
+    <input type="button" value="提交" id="submit" onclick="submit()">
 </div>
 
 <div id="time">
@@ -79,7 +80,7 @@
         添加时间：<input type="text" name="addTime" value="2017-8-8" disabled>
     </div>
     <div class="lastTime">
-        最后修改：<input type="text" name="lastTime" value="2017-8-8" disabled>
+        最后修改：<input type="text" name="lastTime" value="2017-8-8" disabled id="lastTime">
     </div>
 </div>
 <!-- 尾部 -->

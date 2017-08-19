@@ -60,3 +60,8 @@ li{
 #submit{
     margin-left: 402px;
 }
+.tail{
+    margin-top: 170px;
+    background-color: lightgray;
+    text-align: left;
+}

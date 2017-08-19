@@ -8,6 +8,7 @@
     <meta name="keywords" content="Book,shop,online">
     <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/admAdd.css">
+    <script type="text/javascript" src="js/admAdd.js"></script>
 </head>
 <body>
 <!-- 头部 -->
@@ -36,40 +37,38 @@
 
 <div class="addBook">
     <div id="bookinfo">
-        书籍封面：<input type="file" name="bookImg" accept="image/gif, image/jpeg" autofocus><br>
-        书籍名称：<input type="text" value="" name="bookName">
-        <br>
+        <div class="bookInfo">
+            书籍封面：<input type="file" name="bookImg" accept="image/gif, image/jpeg" autofocus><br>
+            书籍名称：<input type="text" value="" name="bookName" id="bookName">
+            <br>
+        </div>
     </div>
     <div id="bookinfo2">
-        作&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;者：<input type="text" value="" name="author"><br>
-        价&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;格：<input type="text" name="price"><br>
+        作&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;者：<input type="text" name="author" id="author"><br>
+        价&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;格：<input type="text" name="price" id="price"><br>
     </div>
     <div id="bookinfo3">
-        分&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;类：<input type="radio" name="kind" value="Books" checked>Books
-        <input type="radio" name="kind" value="Art">Art
-        <input type="radio" name="kind" value="Small Goods">Small Goods<br>
+        分&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;类：<input type="radio" name="kind" value="Books" checked id="Books">Books
+        <input type="radio" name="kind" value="Art" id="Art">Art
+        <input type="radio" name="kind" value="Small Goods" id="Goods">Small Goods<br>
     </div>
     <div id="detailInfo">
         <strong>作者信息：</strong>
 
         <form name="aboutAuthor">
-        <textarea cols="50" rows="10">
-
-        </textarea>
+        <textarea cols="50" rows="10" id="aboutAuthor"></textarea>
         </form>
 
         <strong>书籍信息：</strong>
         <form name="aboutBook">
-        <textarea cols="50" rows="10">
-
-        </textarea>
+        <textarea cols="50" rows="10"  id="aboutBook"></textarea>
         </form>
     </div>
 
 </div>
 <div id="button">
-    <input type="button" value="取消" id="cancel">
-    <input type="button" value="提交" id="submit">
+    <input type="button" value="取消" id="cancel" onclick="return cancel()">
+    <input type="button" value="提交" id="submit" onclick="return submit()">
 </div>
 <!-- 尾部 -->
 <div class="tail">

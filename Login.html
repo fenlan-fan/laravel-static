@@ -7,8 +7,9 @@
     <meta name="description" content="Buy page">
     <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/Login.css" />
+    <script rel="stylesheet" src="js/Login.js"></script>
 </head>
-<body>
+<body onload="">
   <!-- 头部 -->
 <div class="headName">
     <a href="#"> Book-Shop</a><!-- 右侧 -->
@@ -18,14 +19,14 @@
 </div>
 
 <form method="get" action="#" name="login" class="input">
-    &nbsp;&nbsp;&nbsp;account&nbsp;<input type="email" autofocus><br><br>
-    password&nbsp;<input type="password">
+    &nbsp;&nbsp;&nbsp;account&nbsp;<input type="email" autofocus id="account" onblur="checkAccount()" onfocus="checkAccount1()"><br><br>
+    password&nbsp;<input type="password" id="password" onblur="checkPassword()" onfocus="checkPassword1()">
     <div id="button">
         <a href="#">
             <input type="button" value="cancel" id="cancel">&nbsp;&nbsp;
         </a>
         <a href="#">
-            <input type="button" value="ensure" id="ensure">
+            <input type="button" value="ensure" id="ensure" onclick="return check()">
         </a>
     </div>
 </form>

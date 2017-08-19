@@ -1,11 +1,13 @@
 <!doctype html>
 <html>
 <head>
+    <meta charset="utf-8">
     <title>register</title>
     <style type="text/css">
         input:focus{  outline:1px; solid-color: red}
     </style>
     <link href="css/register.css" type="text/css" rel="stylesheet">
+    <script src="js/register.js"></script>
 </head>
 <body bgcolor="white">
 
@@ -14,8 +16,6 @@
             Bookshop
         </a>
 </div>
-
-
 <script>
     window.onload=function () {
         var account=document.getElementById('account');//获得提示文字的引用
@@ -51,7 +51,7 @@
                 <label for="account">账号：</label><!-- for属性规定label与哪个表单绑定 -->
             </div>
             <div class="right">
-                <input type="text" name="my_account" id="account" autofocus="true" placeholder="请输入账号">  <!-- 自动聚焦 -->
+                <input type="text" name="my_account" id="account" autofocus placeholder="请输入账号" onblur="account()">  <!-- 自动聚焦 -->
                 <div class="notice">请输入8位长度的字符串可包括数字、大小写字母，不能输入符号！</div>
             </div>
 
@@ -99,7 +99,7 @@
                 <label>性别：</label>
             </div>
             <div class="right">
-                <label>男：<input type="radio" name="my_sex" value="boy"></label>
+                <label>男：<input type="radio" name="my_sex" value="boy" checked></label>
                 <label>女：<input type="radio" name="my_sex" value="girt"></label>
             </div>
         </fieldset>

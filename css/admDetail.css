@@ -49,3 +49,7 @@ li{
 #time{
     margin-left: 20px;
 }
+.tail{
+    background-color: lightgray;
+    text-align: left;
+}

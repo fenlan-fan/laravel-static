@@ -65,3 +65,24 @@ li{
     background-color: lightgray;
     text-align: left;
 }
+#bookName{
+    margin-top: 5px;
+}
+#author{
+    margin-top: 5px;
+}
+#price{
+    margin-top: 5px;
+}
+#bookinfo3{
+    margin-top: 5px;
+}
+#detailInfo{
+    margin-top: 5px;
+}
+textarea{
+    margin-top:2px;
+}
+#button{
+    margin-top: 5px;
+}

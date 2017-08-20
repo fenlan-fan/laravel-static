@@ -60,10 +60,7 @@ li{
     color: red;
     font-size: large;
 }
-.infoHead{
-    padding: 50px 0 0 800px;
-    font-size: large;
-}
+
 .catalogue tr th{
     text-align: center;
 }
@@ -71,11 +68,22 @@ li{
     text-align: center;
 }
 
-tr{
-    bgcolor:expression_r_r(this.bgcolor=((this.rowIndex)%2==0)?'gray':"#ffffcc")
-}
 .tail{
     margin-top: 170px;
     background-color: lightgray;
     text-align: left;
+}
+table{
+    margin-top: 50px;
+}
+table caption{
+    font-size: x-large;
+    font-weight: bold;
+}
+table tr{
+    height: 50px;
+}
+.turnPage{
+    margin-top: 50px;
+    margin-left: 580px;
 }

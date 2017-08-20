@@ -15,7 +15,6 @@ function start() {
             document.getElementById("Books").checked = true;
             document.getElementById("Art").checked = false;
             document.getElementById("Goods").checked = false;
-
             var date = new Date();
             var year = date.getFullYear();
             var month = date.getMonth() + 1;
@@ -29,4 +28,42 @@ function start() {
 
 function  cancel() {
     globalVar();
+}
+function submit() {
+    var a = true;
+    if(confirm("确认提交")){
+        document.getElementById("bookInfo").style.borderColor = "";
+        document.getElementById("authorInfo").style.borderColor = "";
+        document.getElementById("surplusAmount").style.borderColor = "";
+        document.getElementById("price").style.borderColor = "";
+        document.getElementById("bookName").style.borderColor = "";
+        if (document.getElementById("bookInfo").value == ""){
+            document.getElementById("bookInfo").focus();
+            document.getElementById("bookInfo").style.borderColor = "red";
+            a = false;
+        }
+        if (document.getElementById("authorInfo").value == ""){
+            document.getElementById("authorInfo").focus();
+            document.getElementById("authorInfo").style.borderColor = "red";
+            a = false;
+        }
+        if (document.getElementById("surplusAmount").value == ""){
+            document.getElementById("surplusAmount").focus();
+            document.getElementById("surplusAmount").style.borderColor = "red";
+            a = false;
+        }
+        if (document.getElementById("price").value == ""){
+            document.getElementById("price").focus();
+            document.getElementById("price").style.borderColor = "red";
+            a = false;
+        }
+        if (document.getElementById("bookName").value == ""){
+            document.getElementById("bookName").focus();
+            document.getElementById("bookName").style.borderColor = "red";
+            a = false;
+        }
+    }else {
+        return false;
+    }
+    return a;
 }

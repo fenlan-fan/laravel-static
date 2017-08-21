@@ -14,11 +14,7 @@ a{
     text-decoration: none;
     color: black;
 }
-.name{
-    margin-left: 4%;
-    margin-right: 85%;
-    text-align: center;
-}
+
 li{
     list-style: none;
 }
@@ -28,9 +24,57 @@ li{
 .tail a{
     color: blue;
 }
-.orderForm ul li{
-    margin-top: 20px;
-}
 .turnPage{
     margin-left: 7%;
+}
+.orderTable{
+    margin-top: 20px;
+}
+input{
+    text-align: center;
+}
+img{
+    width: 150px;
+    height: auto;
+}
+.first{
+    width: 200px;
+    text-align: center;
+}
+.second{
+    width: 300px;
+    text-align: center;
+    font-size: larger;
+
+}
+.third{
+    text-align: center;
+    color: lightgray;
+}
+.forth{
+    width: 200px;
+    text-align: center;
+}
+.fifth{
+    text-align: center;
+    color: red;
+}
+.sixth{
+    width: 100px;
+    text-align: center;
+    background-color: red;
+}
+
+table{
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+table tr{
+    background-color: lightgray;
+    border-bottom: 1px solid black;
+}
+#titleTr{
+    height: 50px;
+    color: gray;
 }

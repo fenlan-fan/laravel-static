@@ -44,6 +44,20 @@ function submit() {
         document.getElementById("bookName").style.borderColor = "red";
         a = false;
     }
+    if (document.getElementById("bookImg").value == ""){
+        document.getElementById("bookImg").focus();
+        document.getElementById("bookImg").style.borderColor = "red";
+        a = false;
+    }
 
     return a;
+}
+function size(img) {
+    //限制大小为100k
+    alert("?");
+    prompt("sure?");
+    /*
+    this.ImgFileSize = Math.round(this.ImgObj.fileSize/1024*100)/100;
+    alert(this.ImgFileSize);
+    */
 }

@@ -1,6 +1,6 @@
 function checkAccount() {
     if(document.getElementById("account").value == ""){
-        document.getElementById("account").style.border = "1px solid red";
+        document.getElementById("account").style.borderColor = "red";
     }
 }
 function checkAccount1() {
@@ -8,7 +8,7 @@ function checkAccount1() {
 }
 function checkPassword() {
     if(document.getElementById("password").value == ""){
-        document.getElementById("password").style.border = "1px solid red";
+        document.getElementById("password").style.borderColor = "red";
     }
 }
 function checkPassword1() {
@@ -16,12 +16,13 @@ function checkPassword1() {
 }
 function check() {
     if (document.getElementById("account").value == ""){
-        alert("请输入账号");
+        //alert("请输入账号");
         document.getElementById("account").focus();
+
         return false;
     }
     if (document.getElementById("password").value == ""){
-        alert("请输入密码");
+        //alert("请输入密码");
         document.getElementById("password").focus();
         return false;
     }

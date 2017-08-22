@@ -6,8 +6,9 @@
     <meta name="description" content="Buy page">
     <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/shopcart.css">
+    <script type="text/javascript" src="js/shopcard.js"></script>
 </head>
-<body>
+<body onload="totalprice()">
   <!-- 头部 -->
   <div class="headName">
       <a href="#"> Book-Shop</a><!-- 右侧 -->
@@ -16,25 +17,6 @@
 
 <!-- 订单 -->
   <div class="orderTable">
-      <!-- <div id="list">
-          <ul>
-              <li id="firstInfo">
-
-              </li>
-              <li id="secondInfo">
-
-              </li>
-              <li id="thirdInfo">
-
-              </li>
-              <li id="forthInfo">
-
-              </li>
-              <li id="fifthInfo">
-
-              </li id>
-          </ul>
-      </div>-->
       <table cellspacing="1px" cellpadding="1px" bgcolor="#a9a9a9">
           <tr bgcolor="#a9a9a9" id="titleTr">
               <th id="firstLine">
@@ -44,13 +26,13 @@
                   书名
               </th>
               <th id="thirdLine">
-                  单价
+                  单价/元
               </th>
               <th id="forthLine">
                   购买数量
               </th>
               <th id="fifthLine">
-                  总金额
+                  总金额/元
               </th>
               <th id="sixthLine">
 
@@ -65,16 +47,16 @@
                   <td class="second">
                       <div class="name">你好世界</div>
                   </td>
-                  <td class="third"><!-- 单价 -->
-                      ￥30
+                  <td class="third" id="price1"><!-- 单价 -->
+                      30
                   </td>
                   <td class="forth">
-                      <input type="button" value="-" name="minus" onclick="amountMinus()"
-                      ><input type="text" value="1" name="amount" disabled size="1"
-                      ><input type="button" value="+" name="add" onclick="amountAdd()">
+                      <input type="button" value="-" name="minus" onclick="amountMinus1()"
+                      ><input type="text" value="1" name="amount" disabled size="1" id="amount1"
+                      ><input type="button" value="+" name="add" onclick="amountAdd1()">
                   </td>
-                  <td class="fifth"><!-- 总价 -->
-                      ￥30
+                  <td class="fifth" id="totalPrice1"><!-- 总价 -->
+
                   </td>
                   <td class="sixth">
                       删除
@@ -91,16 +73,16 @@
                   <td class="second">
                       <div class="name">野兽绅士</div>
                   </td>
-                  <td class="third"><!-- 单价 -->
-                      ￥30
+                  <td class="third" id="price2"><!-- 单价 -->
+                      30
                   </td>
                   <td class="forth">
-                      <input type="button" value="-" name="minus" onclick="amountMinus()"
-                      ><input type="text" value="1" name="amount" disabled size="1"
-                      ><input type="button" value="+" name="add" onclick="amountAdd()">
+                      <input type="button" value="-" name="minus" onclick="amountMinus2()"
+                      ><input type="text" value="1" name="amount" disabled size="1" id="amount2"
+                      ><input type="button" value="+" name="add" onclick="amountAdd2()">
                   </td>
-                  <td class="fifth"><!-- 总价 -->
-                      ￥30
+                  <td class="fifth" id="totalPrice2"><!-- 总价 -->
+
                   </td>
                   <td class="sixth">
                       删除
@@ -117,16 +99,16 @@
                   <td class="second">
                       <div class="name">外婆的道歉信</div>
                   </td>
-                  <td class="third"><!-- 单价 -->
-                      ￥30
+                  <td class="third" id="price3"><!-- 单价 -->
+                      20
                   </td>
                   <td class="forth">
-                      <input type="button" value="-" name="minus" onclick="amountMinus()"
-                      ><input type="text" value="1" name="amount" disabled size="1"
-                  ><input type="button" value="+" name="add" onclick="amountAdd()">
+                      <input type="button" value="-" name="minus" onclick="amountMinus3()"
+                      ><input type="text" value="1" name="amount" disabled size="1" id="amount3"
+                  ><input type="button" value="+" name="add" onclick="amountAdd3()">
                   </td>
-                  <td class="fifth"><!-- 总价 -->
-                      ￥30
+                  <td class="fifth" id="totalPrice3"><!-- 总价 -->
+
                   </td>
                   <td class="sixth">
                       删除
@@ -143,16 +125,16 @@
                   <td class="second">
                       <div class="name">后来时间都与你有关</div>
                   </td>
-                  <td class="third"><!-- 单价 -->
-                      ￥30
+                  <td class="third" id="price4"><!-- 单价 -->
+                      15
                   </td>
                   <td class="forth">
-                      <input type="button" value="-" name="minus" onclick="amountMinus()"
-                      ><input type="text" value="1" name="amount" disabled size="1"
-                  ><input type="button" value="+" name="add" onclick="amountAdd()">
+                      <input type="button" value="-" name="minus" onclick="amountMinus4()"
+                      ><input type="text" value="1" name="amount" disabled size="1" id="amount4"
+                  ><input type="button" value="+" name="add" onclick="amountAdd4()">
                   </td>
-                  <td class="fifth"><!-- 总价 -->
-                      ￥30
+                  <td class="fifth" id="totalPrice4"><!-- 总价 -->
+
                   </td>
                   <td class="sixth">
                       删除
@@ -162,36 +144,6 @@
           </tr>
       </table>
   </div>
-  <!--
-  <div class="orderForm">
-      <ul>
-          <li>
-              <a href="#">
-                  <img src="image/1.jpg" alt="你好世界"><br>
-                  <div class="name"> 你好世界 — ￥30</div>
-              </a>
-          </li>
-          <li>
-              <a href="#">
-                  <img src="image/2.jpg" alt="野兽绅士"><br>
-                  <div class="name"> 野兽绅士 — ￥30</div>
-              </a>
-          </li>
-          <li>
-              <a href="#">
-                  <img src="image/3.jpg" alt="外婆的道歉信"><br>
-                  <div class="name"> 外婆的道歉信 — ￥20</div>
-              </a>
-          </li>
-          <li>
-              <a href="#">
-                  <img src="image/4.jpg" alt="后来时间都与你有关"><br>
-                  <div class="name"> 后来时间都与你有关 — ￥25</div>
-              </a>
-          </li>
-      </ul>
-  </div>
-  -->
   <div class="turnPage">
       <a href="#"><<</a>
       <a href="#"><</a>

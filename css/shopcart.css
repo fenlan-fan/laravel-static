@@ -79,8 +79,6 @@ table{
 table tr{
     background-color: lightgray;
     border-bottom: 1px solid darkgray;
-    /*border-collapse: separate;*/
-    /*border-left-color: lightgray;*/
 }
 #titleTr{
     height: 50px;

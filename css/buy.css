@@ -20,23 +20,35 @@ li{
 .headName i{
     margin-left: 28%;
 }
-.buyPage{
-    margin-top: 20px;
-}
-.buyPage img{
-    display: block;
-    margin: 0 auto;/*居中*/
-}
-.fontDescribe{
+
+#left{
+    margin-top: 50px;
+    /*margin-left: 50px;*/
+    margin-right: 50%;
+    background-color: darkgray;
     text-align: center;
 }
-.buyPage ul {
-    margin-left: 43%;
+
+#right{
+    background-color: cornflowerblue;
+    /*display: block;*/
+
+    width: 50%;
+    margin-left: 50%;
+    margin-top: 50px;
+    text-align: center;
 }
-.buyPage ul li{
+#share ul li{
     float: left;
-    width: 40px;
+    margin-left: 50px;
+}
+#share ul{
+    margin-left: 820px;
 }
 .tail ul li a{
     color: blue;
+    /*margin-top: 500px;*/
+}
+.tail ul {
+    margin-top: 550px;
 }

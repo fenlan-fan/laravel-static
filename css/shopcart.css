@@ -24,8 +24,13 @@ li{
 .tail a{
     color: blue;
 }
+.turnPage a{
+    color: cornflowerblue;
+}
 .turnPage{
-    margin-left: 7%;
+    margin-top: 20px;
+    margin-left: 15%;
+    /*color: cornflowerblue;*/
 }
 .orderTable{
     margin-top: 20px;
@@ -34,7 +39,7 @@ input{
     text-align: center;
 }
 img{
-    width: 150px;
+    width: 100px;
     height: auto;
 }
 .first{
@@ -49,7 +54,7 @@ img{
 }
 .third{
     text-align: center;
-    color: lightgray;
+    color: darkgray;
 }
 .forth{
     width: 200px;
@@ -69,10 +74,13 @@ table{
     width: 70%;
     margin-left: 15%;
     margin-right: 15%;
+    border-collapse: collapse;
 }
 table tr{
     background-color: lightgray;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid darkgray;
+    /*border-collapse: separate;*/
+    /*border-left-color: lightgray;*/
 }
 #titleTr{
     height: 50px;
